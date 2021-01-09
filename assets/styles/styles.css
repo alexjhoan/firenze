@@ -269,10 +269,11 @@ section {
 #presale .progressBottom p {
   font-size: 2rem;
   line-height: 2.3rem;
+  margin: 0;
 }
 
-#presale .progressBottom p:firts-child{
-  margin-left: calc(15% + 28px)
+#presale .progressBottom p:first-child {
+  margin-left: calc(15% + 28px);
 }
 
 /*----------------------------btnWhatsapp-------------------------------*/
