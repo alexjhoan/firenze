@@ -42,14 +42,18 @@ img {
 
 section {
   position: relative;
-  padding: 8vh 0;
+  padding: 15vh 0;
+}
+
+.strong {
+  font-weight: 700;
 }
 
 .btn.btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
   border-radius: 30px;
-  padding: 10px 30px;
+  padding: 8px 30px;
   color: #fff;
 }
 
@@ -93,7 +97,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
   margin-top: 90px;
 }
 
@@ -132,6 +136,143 @@ section {
   border-bottom: solid 1px #fff;
   margin: 20px 0;
   max-width: 400px;
+}
+
+/*------------------------------Project--------------------------------*/
+
+#project {
+  background: url(../images/bgProject.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#project .gridProject {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: flex-end;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 20%);
+}
+
+#project .gridProject .infoProject{
+  padding-left: 8%;
+}
+
+#project .gridProject .infoProject img.logo {
+  max-width: 200px;
+  width: 100%;
+  margin: 40px 0;
+}
+
+#project .infoProject .gridList {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+}
+
+#project .infoProject .gridList p {
+  margin: 0;
+}
+
+#project .infoProject .gridList .divider {
+  border-bottom: solid 1px var(--text);
+  margin: 10px 0;
+  width: 90%;
+}
+
+#project .infoProject .footerProject{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 60px 0 40px;
+}
+
+#project .infoProject .footerProject div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+}
+
+#project .infoProject .footerProject p{
+  font-size: 11px;
+  text-align: center;
+}
+
+#project .infoProject .footerProject img{
+  max-width: 140px;
+  width: 100%;
+}
+
+/*-----------------------------presale-------------------------------*/
+
+#presale{
+  background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(185,185,185,0) 10%, rgba(0,0,0,0) 100%), #E5E3DF;
+}
+
+#presale .progressTop {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+#presale .progressTop img {
+  height: 107px;
+}
+
+#presale .progressTop img:first-of-type {
+  position: absolute;
+  bottom: 0;
+  left: calc(15% + 28px);
+}
+
+#presale .progressTop .verticalDivider {
+  position: absolute;
+  bottom: -18px;
+  left: calc(15% - 1px);
+  border-left: solid 1px var(--text);
+  height: 100%;
+}
+
+#presale .progressTop .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#presale .progressTop .text p {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 2rem;
+}
+
+#presale .progressTop .text p span {
+  font-size: 1.5rem;
+}
+
+#presale .progress {
+  height: 58px;
+  background-color: #fff;
+  border-radius: 0;
+  margin: 18px 0;
+}
+
+#presale .progress-bar {
+  background-color: #27AC2C;
+}
+
+#presale .progressBottom{
+  display: flex;
+  flex-direction: row;
+}
+
+#presale .progressBottom p {
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+#presale .progressBottom p:firts-child{
+  margin-left: calc(15% + 28px)
 }
 
 /*----------------------------btnWhatsapp-------------------------------*/
@@ -251,5 +392,6 @@ header div#whatsappBtn a span {
 @media (min-width: 1400px) {
   .container {
     max-width: 1600px;
+    width: 90%;
   }
 }
