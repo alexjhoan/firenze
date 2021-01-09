@@ -1,24 +1,39 @@
 @import "fonts.css";
 
-:root{
-  --primary: #191920;
-  --secondary: #033545;
-  --text: #12446e;
-  --text-secondary: #425762;
-  --text-hover: #191920;
+:root {
+  --primary: #ea705c;
+  --secondary: #e5e3df;
+  --text: #494846;
   --btn: #a3a3a3;
-  --btn-hover: #a3a3a3;
+  --btn-hover: #bc5c4c;
   font-size: 16px;
 }
 
-p.h1, h1, p.h1, h2, p.h1, h3, p.h1, h4, p.h1, h5, p.h1, h6 {
+p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Roboto;
   color: var(--text);
 }
 
-a,p,div,input,button,textarea{
+p.h1, h1{
+  font-size: 2.75rem;
+}
+
+p.h2, h2{
+  font-size: 2rem;
+}
+
+p.h3, h3{
+  font-size: 1.5rem;
+}
+
+a,
+p,
+div,
+input,
+button,
+textarea {
   font-family: Roboto;
-  color: var(--text-secondary);
+  color: var(--text);
 }
 
 img {
@@ -33,26 +48,208 @@ section {
 .btn.btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-  border-radius: 0;
-  padding: 10px 100px;
+  border-radius: 30px;
+  padding: 10px 30px;
   color: #fff;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-  background-color: var(--btn-hover)!important;
-  border-color: var(--btn-hover)!important;
-  box-shadow: none!important;
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  background-color: var(--btn-hover) !important;
+  border-color: var(--btn-hover) !important;
+  box-shadow: none !important;
 }
-/*----------------------------Web-------------------------------*/
+
+/*----------------------------NavBar-------------------------------*/
+
+#navbar {
+  background: #fff;
+  border-bottom: solid 8px var(--primary);
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+
+#navbar img.logoNav {
+  height: auto;
+  width: 250px;
+}
+
+#navbar a.nav-link {
+  color: var(--text);
+  padding: 8px 17px;
+}
+
+/*----------------------------Banner-------------------------------*/
+
+#banner {
+  background: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../images/gal3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  height: calc(100vh - 90px);
+  margin-top: 90px;
+}
+
+#banner .titleBanner p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.85rem;
+  line-height: 2rem;
+}
+
+#banner .titleBanner p:first-of-type {
+  font-size: 2.75rem;
+  line-height: 3rem;
+}
+
+#banner .titleBanner p:first-of-type span {
+  font-weight: 700;
+}
+
+#banner .titleBanner p:last-of-type {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+}
+
+#banner .titleBanner p:last-of-type span {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+}
+
+#banner .titleBanner button {
+  margin-top: 35px;
+}
+
+#banner .titleBanner .dividerLine {
+  border-bottom: solid 1px #fff;
+  margin: 20px 0;
+  max-width: 400px;
+}
+
+/*----------------------------btnWhatsapp-------------------------------*/
+
+header div#whatsappBtn {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  width: auto;
+  padding: 0;
+  z-index: 10;
+}
+header div#whatsappBtn a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+}
+header div#whatsappBtn a:hover {
+  text-decoration: none;
+  color: var(--text);
+}
+header div#whatsappBtn button {
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  padding: 0px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: brickBtn 6s infinite;
+  animation: brickBtn 6s infinite;
+}
+header div#whatsappBtn button:focus {
+  outline: none;
+}
+header div#whatsappBtn button img {
+  width: 50px;
+}
+header div#whatsappBtn a span {
+  background: var(--secondary);
+  padding: 6px 10px;
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+@keyframes brickBtn {
+  0 {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  90% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  91% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  92% {
+    transform: translate(-3px, 0) rotate(1deg);
+  }
+  93% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  94% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  95% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  96% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  97% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  98% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  99% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 
 /*----------------------------Queries-------------------------------*/
 
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+}
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+}
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+}
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+  }
+}
