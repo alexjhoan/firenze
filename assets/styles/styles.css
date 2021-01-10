@@ -180,13 +180,13 @@ section {
   width: 90%;
 }
 
-#project .infoProject .footerProject{
+#project .infoProject .footerProject {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 60px 0 40px;
 }
 
-#project .infoProject .footerProject div{
+#project .infoProject .footerProject div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,6 +275,68 @@ section {
 #presale .progressBottom p:first-child {
   margin-left: calc(15% + 28px);
 }
+
+/*----------------------------ubication-------------------------------*/
+
+#ubication{
+  background:url(../images/bgUbication.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#ubication div#imgMap svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto!important;
+}
+
+#ubication2 div#imgMap2 {
+  position: relative;
+  left: 0;
+  width: 60%;
+  height: auto!important;
+  z-index: 1;
+}
+
+#ubication2 .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  padding: 15vh 15px;
+  z-index: 0;
+}
+
+#ubication2 .container .infoMap{
+  margin-left: auto;
+  width: fit-content;
+}
+
+#ubication2 .infoMap p{
+  margin: 0;
+}
+
+#ubication2 .infoMap p.strong {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#ubication2 .infoMap p.strong img {
+  width: 44px;
+  margin: 0 10px;
+}
+
+#ubication2 .infoMap .divider {
+  border-bottom: solid 1px var(--text);
+  margin: 10px 0;
+  width: 200%;
+  float: right;
+}
+
 
 /*----------------------------btnWhatsapp-------------------------------*/
 
