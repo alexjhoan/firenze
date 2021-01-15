@@ -20,7 +20,6 @@ const galleryTop = new Swiper('.gallery-top', {
 
 // ------------------------------Form-----------------------------
 
-
 function dataSubmited(data) {
   const requestOptions = {
     method: 'POST',
@@ -64,9 +63,15 @@ function submited() {
   form.classList.add('was-validated')
 }
 
+// ------------------------------img-edf-units----------------------------
+
 function click(id) {
   console.log(id);
-  // $(id).attr('class', 'active');
-  $(`#${id}`).addClass("activeLevel");
-  $(`.${id}`).addClass("active");
+  $(".activeLevel").removeClass("activeLevel");
+  $(".activeText").removeClass("activeText");
+  setTimeout(() => {
+    $(`#${id}`).addClass("activeLevel");
+    $(`.${id}`).addClass("activeText");
+    $("#changeImg").attr("src",`assets/images/plantas/${id}.png`)
+  },10)
 }
