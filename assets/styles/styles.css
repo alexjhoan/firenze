@@ -374,9 +374,14 @@ section#project .imgbg {
 }
 
 /*----------------------------unitsCarousel-------------------------------*/
+#unitsCarousel {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #unitsCarousel .gallery-thumbs {
-  margin-top: 44px;
+  margin-top: 30px;
 }
 
 #unitsCarousel .gallery-thumbs .swiper-slide:hover {
@@ -560,6 +565,9 @@ section#us {
   color: var(--text);
   margin: 20px 0;
   font-size: 2.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #contact a.whatsapp img {
@@ -703,12 +711,175 @@ header div#whatsappBtn a span {
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {
+  #unitsCarousel {
+    width: 55%;
+  }
+  #presale .progressBottom p {
+    font-size: 1.5rem;
+  }
+
+  #presale .progressTop img {
+      height: 90px;
+  }
+
+  #presale .progress {
+      height: 45px;
+  }
+
+  #presale .progressTop .text p {
+      font-size: 1.5rem;
+      line-height: 1.25;
+  }
+
+  #presale .progressTop .text p span {
+      font-size: 1.3rem;
+  }
+  #ubication2 div#imgMap2 {
+    width: 50%;
+  }
 }
 
 @media (max-width: 1199.98px) {
+  p.h1, h1 {
+    font-size: 2.5rem;
+  }
+
+  p.h3, h3 {
+      font-size: 1.25rem;
+  }
+
+  #contact img.imgbg {
+      max-width: 150px;
+  }
+
+  #contact .whatsapp {
+      font-size: 2rem;
+  }
+
+  #contact a.whatsapp img {
+      width: 50px;
+  }
+
+  #contact .shared img {
+      height: 40px;
+  }
 }
 
 @media (max-width: 991.98px) {
+  .navbar-light .navbar-toggler {
+    border: 0;
+    padding: 0;
+    outline: none!important;
+    box-shadow: none!important;
+  }
+  .navbar-light .navbar-toggler-icon {
+      width: 2em;
+  }
+  .navbar-collapse {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 90px;
+  }
+  .navbar-collapse a {
+      position: relative;
+      margin-bottom: 5px;
+      padding-bottom: 5px!important;
+  }
+  .navbar-collapse li:not(:last-child) a:before {
+      content: '';
+      position: absolute;
+      background: #d3cfc8;
+      width: calc(100% - 34px);
+      height: 1px;
+      left: 17px;
+      bottom: 0;
+  }
+
+  .navbar-collapse:before {
+      content: '';
+      position: absolute;
+      top: -11px;
+      width: 100%;
+      height: 5px;
+      box-shadow: 0px 10px 10px rgba(0,0,0,.25);
+  }
+  section {
+    padding: 10vh 0;
+  }
+  #amenities .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+  }
+  #contact .formCol2 {
+    padding-top: 45px;
+  }
+  #unitsCarousel {
+    width: 100%;
+  }
+  #presale .progressTop img {
+    height: 70px;
+  }
+
+  #presale .progressBottom p {
+      font-size: 1.25rem;
+      line-height: 1.35;
+  }
+
+  #presale .progress {
+      height: 40px;
+      margin: 15px 0;
+  }
+
+  #presale .progressTop .text p {
+      font-size: 1.25rem;
+  }
+
+  #presale .progressTop .text p span {
+      font-size: 1rem;
+  }
+  #ubication {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 45px 0 0;
+    overflow: hidden;
+  }
+  #ubication p {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  #ubication div#imgMap svg {
+    position: relative;
+    width: calc(100% + 130px) !important;
+    transform: translateX(-130px) !important;
+  }
+  #project .gridProject {
+    grid-template-columns: 1fr;
+    background: transparent;
+  }
+
+  #project .gridProject > img {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #project .gridProject .infoProject {
+      padding-left: 0;
+  }
+
+  #project .infoProject .gridList {
+      padding-bottom: 30px;
+  }
+  #ubication2 .container {
+    padding: 5vh 15px;
+  }
+  footer .item img {
+    width: calc(100% - 60px);
+  }
+  footer .item p {
+      font-size: 1rem;
+  }
 }
 
 
@@ -725,6 +896,9 @@ header div#whatsappBtn a span {
   }
   #navbar {
     height: 60px;
+  }
+  .navbar-collapse {
+    top: 60px;
   }
   #navbar img.logoNav {
     width: 122px;
@@ -853,21 +1027,12 @@ header div#whatsappBtn a span {
   #presale .progressTop img {
     height: 52px;
   }
-  #ubication {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 45px 0 0;
-    overflow: hidden;
-  }
-  #ubication p {
-    color: #fff;
-    margin-bottom: 30px;
-  }
+
   #ubication div#imgMap svg {
-    position: relative;
     width: calc(100% + 60px) !important;
     transform: translateX(-60px) !important;
   }
+
   #ubication2 div#imgMap2 {
     width: 100%;
   }
