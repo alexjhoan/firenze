@@ -82,6 +82,22 @@ section {
   box-shadow: none !important;
 }
 
+.btn.btn-outline-primary {
+  border-color: #579693;
+  border-radius: 30px;
+  padding: 8px 30px;
+  color: #579693;
+}
+
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:active,
+.btn.btn-outline-primary:focus {
+  border-color: #579693 !important;
+  background-color: #579693;
+  box-shadow: none !important;
+  color: #fff;
+}
+
 /*----------------------------NavBar-------------------------------*/
 
 #navbar {
@@ -95,6 +111,7 @@ section {
   z-index: 10;
   width: 100%;
   top: 0;
+  box-shadow: 0px 5px 19px rgba(0,0,0,.29);
 }
 
 #navbar img.logoNav {
@@ -102,11 +119,18 @@ section {
   width: 250px;
 }
 
+#navbar a.nav-link.active {
+  font-weight: 700;
+}
+
 #navbar a.nav-link {
   color: var(--text);
   padding: 8px 17px;
 }
 
+#navbar .navbar-collapse.collapse.show ul.navbar-nav {
+  box-shadow: 0px 5px 19px rgba(0,0,0,.29);
+}
 /*----------------------------Banner-------------------------------*/
 
 #banner {
@@ -582,6 +606,51 @@ section#us {
   margin-right: 30px;
 }
 
+/*----------------------------aboutUs-------------------------------*/
+
+#aboutUs{
+  margin-top: 100px;
+}
+
+#aboutUs .logo{
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 30px;
+}
+#aboutUs .footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px 0;
+}
+#aboutUs .footer p{
+  margin-right: 30px;
+}
+#aboutUs #continents .footer {
+  justify-content: flex-start;
+}
+#aboutUs #continents .footer img {
+  height: 84px;
+  width: auto;
+  margin-right: 40px;
+}
+
+#aboutUs #continents .footer div:first-child {
+  display: flex;
+  flex-direction: row;
+}
+
+#aboutUs #continents .footer div:last-child {
+  display: flex;
+  flex-direction: row;
+}
+
+#aboutUs .divider {
+  width: 100%;
+  margin: 40px auto 70px;
+}
+
 /*----------------------------footer-------------------------------*/
 
 footer {
@@ -802,7 +871,7 @@ header div#whatsappBtn a span {
       top: -11px;
       width: 100%;
       height: 5px;
-      box-shadow: 0px 10px 10px rgba(0,0,0,.25);
+      box-shadow: 0px 10px 6px rgba(0,0,0,0.20);
   }
   section {
     padding: 10vh 0;
@@ -873,6 +942,24 @@ header div#whatsappBtn a span {
   }
   #ubication2 .container {
     padding: 5vh 15px;
+  }
+  #aboutUs #continents .footer img {
+    height: 70px;
+    width: auto;
+    margin-right: 0;
+  }
+  #aboutUs #ventus .footer{
+    flex-direction: column;
+  }
+  #aboutUs #continents .footer {
+    flex-direction: column;
+  }
+  #aboutUs #continents .footer div:first-child {
+    justify-content: space-between;
+  }
+  #aboutUs #continents .footer div:last-child {
+    justify-content: space-evenly;
+    margin-top: 30px;
   }
   footer .item img {
     width: calc(100% - 60px);
@@ -1196,6 +1283,14 @@ header div#whatsappBtn a span {
     height: 32px;
     margin-right: 25px;
   }
+
+  #aboutUs {
+    margin-top: 50px;
+  }
+  #aboutUs .logo{
+    max-width: 180px;
+  }
+
   footer {
     padding: 45px 0;
   }
@@ -1227,6 +1322,7 @@ header div#whatsappBtn a span {
   footer .item.privacyText p {
     font-size: 0.8rem;
   }
+
 }
 
 @media (max-width: 575.98px) {
