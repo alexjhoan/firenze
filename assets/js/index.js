@@ -1,4 +1,25 @@
+// ------------------------------Carousel-----------------------------
+
+const galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 20,
+  slidesPerView: 7,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+const galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
+
 // ------------------------------Form-----------------------------
+
 
 function dataSubmited(data) {
   const requestOptions = {
@@ -43,3 +64,9 @@ function submited() {
   form.classList.add('was-validated')
 }
 
+function click(id) {
+  console.log(id);
+  // $(id).attr('class', 'active');
+  $(`#${id}`).addClass("activeLevel");
+  $(`.${id}`).addClass("active");
+}
