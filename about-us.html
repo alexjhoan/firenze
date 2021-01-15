@@ -28,8 +28,36 @@
     #navbar a.nav-link.active {
       font-weight: 700;
     }
-    .footer{
+
+    #aboutUs{
+      margin-top: 100px;
+    }
+
+    #aboutUs .logo{
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+    #aboutUs .footer{
       display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    #aboutUs .footer p{
+      margin-right: 30px;
+    }
+    #aboutUs #continents .footer {
+      justify-content: flex-start;
+    }
+    #aboutUs #continents .footer img {
+      height: 84px;
+      width: auto;
+      margin-right: 40px;
+    }
+    #aboutUs .divider {
+      width: 100%;
+      margin: 40px auto 70px;
     }
   </style>
 </head>
@@ -46,22 +74,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="/#project">Proyecto</a>
+                  <a class="nav-link" href="/firenze/#project">Proyecto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/#ubication">Ubicación</a>
+                  <a class="nav-link" href="/firenze/#ubication">Ubicación</a>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href="/#units">Unidades</a>
+                  <a class="nav-link" href="/firenze/#units">Unidades</a>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href="/#amenities">Amenities</a>
+                  <a class="nav-link" href="/firenze/#amenities">Amenities</a>
                 </li>
                  <li class="nav-item">
                   <a class="nav-link active" href="#us" onclick="return false">Nosotros</a>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href="/#contact">Contacto</a>
+                  <a class="nav-link" href="/firenze/#contact">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -88,25 +116,25 @@
 	</header>
   <section id="aboutUs">
     <div class="container">
-      <div class="row">
+      <div class="row" id="ventus">
         <div class="col-12 col-md-4">
-          <img src="assets/icons/ventus.png" alt="">
+          <img src="assets/icons/ventus.png" alt="" class="logo" />
         </div>
         <div class="col-12 col-md-8">
           <p class="strong">Ventus es la empresa líder en el desarrollo y construcción de proyectos renovables e infraestructura de la Región.</p>
           <p>Luego de 10 años de constante crecimiento y desarrollo en proyectos de ingeniería y construcción civil, Ventus desembarca en el mercado inmobiliario uruguayo a través de una asociación estratégica.</p>
           <div class="footer">
-            <p><span class="strong">700</span><br />colaboradores propios de más de diez nacionalidades trabajan en Ventus</p>
-            <p><span class="strong">60 proyectos</span><br />de energías renovables e infraestructura ejecutados en LatAm</p>
-            <p><span class="strong">10 años</span><br />de experiencia como desarrollador y constructor de proyectos</p>
+            <p><span class="strong h2">700</span><br />colaboradores propios de más de diez nacionalidades trabajan en Ventus</p>
+            <p><span class="strong h2">60 proyectos</span><br />de energías renovables e infraestructura ejecutados en LatAm</p>
+            <p><span class="strong h2">10 años</span><br />de experiencia como desarrollador y constructor de proyectos</p>
           </div>
-          <button class="btn btn-outline-primary">Conocer más</button>
+          <a class="btn btn-outline-primary" href="https://ventusenergia.com/" target="_blank">Conocer más</a>
         </div>
       </div>
       <div class="divider"></div>
-      <div class="row">
+      <div class="row" id="continents">
         <div class="col-12 col-md-4">
-          <img src="assets/icons/continents.png" alt="">
+          <img src="assets/icons/continents.png" alt="" class="logo" />
         </div>
         <div class="col-12 col-md-8">
           <p class="strong">Grupo de profesionales con más de 20 años de trayectoria en Real Estate.</p>
@@ -118,17 +146,16 @@
             <img src="assets/icons/america.png" alt="america">
             <img src="assets/icons/asia.png" alt="asia">
           </div>
-          <button class="btn btn-outline-primary">Conocer más</button>
         </div>
       </div>
       <div class="divider"></div>
-      <div class="row">
+      <div class="row" id="cesio">
         <div class="col-12 col-md-4">
-          <img src="assets/icons/cesio.png" alt="">
+          <img src="assets/icons/cesio.png" alt="" class="logo" />
         </div>
         <div class="col-12 col-md-8">
           <p>Con más de 30 años de trayectoria, Cesio Olveira es uno de los estudios más reconocidos de Uruguay, caracterizándose por crear proyectos modernos y funcionales, con un excelente sentido estético y alta rentabilidad.</p>
-          <button class="btn btn-outline-primary">Conocer más</button>
+          <a class="btn btn-outline-primary mt-4" href="https://cesiolveira.com/" target="_blank">Conocer más</a>
         </div>
       </div>
     </div>
