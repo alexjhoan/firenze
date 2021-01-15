@@ -627,6 +627,157 @@ header div#whatsappBtn a span {
 }
 
 @media (max-width: 575.98px) {
+  :root {
+    font-size: 13px;
+  }
+  #navbar {
+    height: 60px;
+  }
+  #navbar img.logoNav {
+    width: 122px;
+  }
+  #banner {
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    margin-top: 60px;
+  }
+  #banner .titleBanner p:first-of-type {
+    font-size: 2.25rem;
+  }
+  #banner .titleBanner p {
+    font-size: 1.45rem;
+  }
+  #banner .titleBanner p:last-of-type {
+    font-size: 1.5rem;
+  }
+  #banner .titleBanner p:last-of-type span {
+    font-size: 4rem;
+  }
+  #project {
+    background: none;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  #project .gridProject {
+    display: block;
+    margin-bottom: 15px;
+  }
+  #project .gridProject .infoProject {
+    padding: 0 20px;
+  }
+  #project .infoProject .gridList {
+    display: block;
+    margin-bottom: 15px;
+    background: #F7F7F7;
+    margin-left: calc(-.75rem - 20px);
+    margin-right: calc(-.75rem - 20px);
+    width: calc(100% + 1.5rem + 40px);
+    padding: 10px 0;
+  }
+  #project .infoProject .gridList p {
+    padding-left: calc(0.75rem + 20px);
+    padding-right: calc(0.75rem + 20px);
+    width: 70%;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  #project .infoProject .gridList p:before {
+    content: '';
+    position: absolute;
+    background: #d3cfc8;
+    width: calc(100% - 20px);
+    height: 1px;
+    left: 0;
+    bottom: 0;
+  }
+
+  #project .gridProject > img,
+  #project .infoProject .gridList p + .divider {
+    display: none!important;
+  }
+
+  #project .infoProject .footerProject {
+    grid-column-gap: 15px;
+    margin: 40px 0 0;
+  }
+  #project .infoProject .footerProject div {
+      padding: 0;
+  }
+  #project .infoProject .footerProject p {
+      font-size: 7px;
+  }
+  #project .infoProject .footerProject img {
+      max-width: 90px;
+  }
+
+  #project .infoProject .footerProject div:last-of-type img {
+      width: 100px;
+  }
+  #presale {
+    padding: 45px 0;
+  }
+
+  #presale .progressTop .text p {
+      font-size: .85rem;
+      line-height: 1.25;
+  }
+
+  #presale .progressTop .text p span {
+      font-size: .75rem;
+  }
+
+  #presale .progressTop .verticalDivider {
+      left: calc(20% - 1px);
+  }
+
+  #presale .progress {
+      height: 32px;
+      margin: 10px 0;
+  }
+
+  #presale .progress-bar {
+      width: 20%!important;
+  }
+
+  #presale .progressBottom p {
+      font-size: 1rem;
+      line-height: 1.3;
+  }
+
+  #presale .progressTop img {
+      height: 52px;
+  }
+  #ubication {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 45px 0 0;
+  }
+  #ubication p {
+      color: #fff;
+      margin-bottom: 30px;
+  }
+  #ubication div#imgMap svg {
+    position: relative;
+    width: calc(100% + 60px)!important;
+    transform: translateX(-60px)!important;
+  }
+  #ubication2 div#imgMap2 {
+    width: 100%;
+  }
+
+  #ubication2 .container {
+      position: relative;
+      padding: 30px 15px;
+  }
+  #ubication2 .container .infoMap {
+      margin-left: 0;
+      padding: 0 20px;
+  }
 }
 
 @media (min-width: 1400px) {
