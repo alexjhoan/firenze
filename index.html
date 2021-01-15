@@ -6,7 +6,9 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preload" href="assets/styles/bootstrap/bootstrap.min.css" as="style">
   <link rel="preload" href="assets/styles/styles.css" as="style"/>
+  <script type="text/javascript" src="assets/js/svg-inject.min.js"></script>
 	<link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/js/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/styles/styles.css" />
 	<title>Firenze</title>
 </head>
@@ -80,6 +82,7 @@
 		</div>
 	</section>
   <section id="project">
+    <img src="assets/images/davidsArm.png" class="imgbg">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-11 gridProject">
@@ -178,14 +181,104 @@
       </div>
     </div>
   </section>
-  <section></section>
-  <section></section>
+  <section id="units">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="h1 strong"><img src="assets/icons/title.png">Unidades</p>
+          <p class="h3"><span class="strong">14 tipologías de monoambientes y un dormitorio.</span><br />El 80% de las unidades con balcón y vista despejada.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <img src="assets/images/plantas/edf.svg" onload="SVGInject(this)" />
+          <!-- <img src="assets/images/plantas/level1.svg"> -->
+        </div>
+        <div class="col-12 col-md-7">
+          <img id="imgPlanta" src="assets/images/plantas/level1.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="unitsCarousel">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" >
+                <img src="assets/images/gal1.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal2.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal3.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal4.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal5.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal6.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal7.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal8.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal9.jpg" alt="">
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" >
+                <img src="assets/images/gal1.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal2.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal3.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal4.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal5.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal6.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal7.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal8.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                <img src="assets/images/gal9.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="amenities">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p class="h2"><img src="assets/icons/title.png" alt="">Amenities</p>
-          <p class="h3">Amplios y disfrutables espacios para complementar tu estilo de vida</p>
+          <p class="h1 strong"><img src="assets/icons/title.png">Amenities</p>
+          <p class="h3 strong">Amplios y disfrutables espacios para complementar tu estilo de vida</p>
           <div class="icons">
             <div class="icon">
               <img src="assets/icons/terraza.png">
@@ -270,8 +363,45 @@
       </div>
     </div>
   </section>
-  <section></section>
-  <section></section>
+  <section id="contact">
+    <img src="assets/icons/formBg.svg" class="imgbg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p class="h1 strong">Solicitá más información</p>
+          <p class="h3 strong">Torre Firenze, un proyecto imperdible para vivir o invertir.</p>
+          <form id="contactForm" class="needs-validation" action="javascript:void(0);" novalidate>
+            <div class="form-floating">
+              <input type="text" class="form-control" placeholder="Nombre" id="name" required>
+              <label for="name">Nombre*</label>
+            </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" placeholder="Email" id="email" required>
+              <label for="email">Email*</label>
+            </div>
+            <div class="form-floating">
+              <input type="tel" class="form-control" placeholder="Telefono" id="name" required>
+              <label for="name">Telefono*</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" id="consult" style="height: 110px" placeholder="Consulta" required></textarea>
+              <label for="consult">Consulta*</label>
+            </div>
+            <button class="btn btn-primary mt-3" type="submit" onclick="submited()">Enviar</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-5 formCol2">
+          <p class="h3">Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</p>
+          <p class="h3 strong">Coordiná una reunión virtual</p>
+          <a href="#" onclick="return false" class="whatsapp strong"><img src="assets/icons/whatsapp.png">+598 96 207 460</a>
+          <div class="shared">
+            <a href="#" onclick="return false"><img src="assets/icons/FB.png"></a>
+            <a href="#" onclick="return false"><img src="assets/icons/ig.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <div class="container">
       <div class="row">
@@ -295,6 +425,7 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/js/lottie.min.js"></script>
+<script type="text/javascript" src="assets/js/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="assets/js/bodymovin.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
