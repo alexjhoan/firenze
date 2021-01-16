@@ -391,11 +391,74 @@ section#project .imgbg {
   float: right;
 }
 
-/*----------------------------unitsCarousel-------------------------------*/
+/*----------------------------units-------------------------------*/
 
 #units {
   background-color: #f7f7f7;
 }
+
+#units .download {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+#units .download a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#units .download a img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+#units .download .zoom{
+  width: 30px;
+  margin-left: 20px;
+  transform: translateY(-3px);
+}
+
+#units .footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#units .footer div:first-child{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+#units .footer p.titleFoo{
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 2.2rem;
+  margin: 0;
+}
+
+#units .footer p.titleFoo span{
+  font-weight: 400;
+  margin: 0;
+}
+
+#units .footer div:first-child img{
+  height: auto;
+  width: 82px;
+  margin-right: 15px;
+}
+
+#units .footer p.h3 {
+  font-style: italic;
+}
+
 
 /*----------------------------unitsCarousel-------------------------------*/
 #unitsCarousel {

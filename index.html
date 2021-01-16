@@ -9,6 +9,7 @@
   <script type="text/javascript" src="assets/js/svg-inject.min.js"></script>
 	<link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/js/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
   <link rel="stylesheet" href="assets/styles/styles.css" />
 	<title>Firenze</title>
 </head>
@@ -25,22 +26,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="/firenze/#project">Proyecto</a>
+                  <a class="nav-link" href="#project">Proyecto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/firenze/#ubication">Ubicación</a>
+                  <a class="nav-link" href="#ubication">Ubicación</a>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href="/firenze/#units">Unidades</a>
+                  <a class="nav-link" href="#units">Unidades</a>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href="/firenze/#amenities">Amenities</a>
+                  <a class="nav-link" href="#amenities">Amenities</a>
                 </li>
                  <li class="nav-item">
                   <a class="nav-link" href="/firenze/about-us.html">Nosotros</a>
                 </li>
                  <li class="nav-item">
-                  <a class="nav-link" href="/firenze/#contact">Contacto</a>
+                  <a class="nav-link" href="#contact">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -75,7 +76,7 @@
             <p>En un punto estratégico<br />y altamente rentable.</p>
             <div class="dividerLine"></div>
             <p><span>8% OFF</span><br />en unidades limitadas</p>
-            <button class="btn btn-primary">Más información</button>
+            <a href="#contact" class="btn btn-primary">Más información</a>
           </div>
 				</div>
 			</div>
@@ -192,10 +193,26 @@
       <div class="row mt-4">
         <div class="col-12 col-md-5">
           <img src="assets/images/plantas/edf.svg" onload="SVGInject(this)" />
-          <!-- <img src="assets/images/plantas/edf.svg"> -->
         </div>
         <div class="col-12 col-md-7">
-          <img src="assets/images/plantas/pb.png" id="changeImg">
+          <img src="assets/images/plantas/pb.png" alt="planos" id="changeImg"/>
+          <div class="download">
+            <a href="assets/images/planos.zip" target="_blank"><img src="assets/icons/download.png" alt="download" />Descargar planos</a>
+            <a id="changeImgUrl" href="assets/images/plantas/pb.png">
+              <img src="assets/icons/zoom.svg" alt="zoom" class="zoom">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer">
+          <div>
+            <img src="assets/icons/progressCircle.png" alt="">
+            <p class="titleFoo">10%<br /><span class="h3">VENDIDO</span></p>
+          </div>
+          <p class="h3">¡ASEGURÁ TU UNIDAD EN PREVENTA!</p>
+          <p class="strong">Consultá precios y disponibilidad</p>
+          <div><a href="#contact" class="btn btn-primary">Solicitar información</a></div>
         </div>
       </div>
     </div>
@@ -399,7 +416,7 @@
           <a href="#" onclick="return false" class="whatsapp strong"><img src="assets/icons/whatsapp.png">+598 96 207 460</a>
           <div class="shared">
             <a href="#" onclick="return false"><img src="assets/icons/FB.png"></a>
-            <a href="#" onclick="return false"><img src="assets/icons/ig.png"></a>
+            <a href="https://www.instagram.com/torrefirenze/"><img src="assets/icons/ig.png"></a>
           </div>
         </div>
       </div>
@@ -432,6 +449,7 @@
 <script type="text/javascript" src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/js/lottie.min.js"></script>
 <script type="text/javascript" src="assets/js/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
 <script type="text/javascript" src="assets/js/bodymovin.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>

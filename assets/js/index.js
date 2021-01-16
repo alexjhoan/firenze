@@ -73,5 +73,14 @@ function click(id) {
     $(`#${id}`).addClass("activeLevel");
     $(`.${id}`).addClass("activeText");
     $("#changeImg").attr("src",`assets/images/plantas/${id}.png`)
+    $("#changeImgUrl").attr("href",`assets/images/plantas/${id}.png`)
   },10)
 }
+
+$(document).ready(function() {
+  $("#changeImgUrl").fancybox({
+    overlay : {
+      closeClick : true,
+    }
+  });
+})
