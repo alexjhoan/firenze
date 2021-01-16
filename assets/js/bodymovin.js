@@ -9,7 +9,7 @@ lottie.loadAnimation({
   name: "map"
 });
 
-function ubication() {
+function ubicationMovin() {
   let container = $("#ubication");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
@@ -30,7 +30,7 @@ lottie.loadAnimation({
   name: "map2"
 });
 
-function ubication2() {
+function ubication2Movin() {
   let container = $("#ubication2");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
@@ -43,6 +43,6 @@ function ubication2() {
 }
 
 $(window).on("scroll", function () {
-  ubication()
-  ubication2()
+  ubicationMovin()
+  ubication2Movin()
 });

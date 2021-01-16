@@ -98,6 +98,10 @@ section {
   color: #fff;
 }
 
+.animate__animated {
+  opacity: 0;
+}
+
 /*----------------------------NavBar-------------------------------*/
 
 #navbar {

@@ -84,3 +84,134 @@ $(document).ready(function() {
     }
   });
 })
+
+
+// ------------------------------animated-css----------------------------
+
+function project() {
+  let container = $("#project");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - (heightElem / 2.5))) {
+    $("#project .aniLe").addClass("animate__fadeInLeft")
+    $("#project .aniRi").addClass("animate__fadeInRight")
+  }
+}
+
+function presale() {
+  let container = $("#presale");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - heightElem)) {
+    $("#presale .aniUp").addClass("animate__fadeInUp")
+  }
+}
+
+function ubication() {
+  let container = $("#ubication");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - heightElem)) {
+    $("#ubication .aniLe").addClass("animate__fadeInLeft")
+  }
+}
+
+function ubication2() {
+  let container = $("#ubication2");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - (heightElem / 1.5))) {
+    $("#ubication2 .aniRi").addClass("animate__fadeInRight")
+  }
+}
+
+function units() {
+  let container = $("#units");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - (heightElem / 2.5))) {
+    $("#units .aniLe").addClass("animate__fadeInLeft")
+    $("#units .aniRi").addClass("animate__fadeInRight")
+    $("#units .aniUp").addClass("animate__fadeInUp")
+    $("#units .aniDo").addClass("animate__fadeInDown")
+  }
+}
+
+function unitsCarousel() {
+  let container = $("#unitsCarousel");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - (heightElem / 1.5))) {
+    $("#unitsCarousel .aniLe").addClass("animate__fadeInLeft")
+    $("#unitsCarousel .aniRi").addClass("animate__fadeInRight")
+  }
+}
+
+function amenities() {
+  let container = $("#amenities");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - (heightElem / 2.5))) {
+    $("#amenities .aniLe").addClass("animate__fadeInLeft")
+    $("#amenities .aniRi").addClass("animate__fadeInRight")
+    $("#amenities .aniUp").addClass("animate__fadeInUp")
+    $("#amenities .aniDo").addClass("animate__fadeInDown")
+  }
+}
+
+function us() {
+  let container = $("#us");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - (heightElem / 2.5))) {
+    $("#us .aniUp").addClass("animate__fadeInUp")
+  }
+}
+
+function projectUs() {
+  let container = $("#projectUs");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - (heightElem / 1.5))) {
+    $("#projectUs .aniIn").addClass("animate__fadeIn")
+    $("#projectUs .aniUp").addClass("animate__fadeInUp")
+    $("#projectUs .aniDo").addClass("animate__fadeInDown")
+  }
+}
+
+function contact() {
+  let container = $("#contact");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  if (scroll > (heightTop - (heightElem / 1.5))) {
+    $("#contact .aniLe").addClass("animate__fadeInLeft")
+    $("#contact .aniRi").addClass("animate__fadeInRight")
+  }
+}
+
+// ------------------------------controls-scroll----------------------------
+
+
+$(window).on("scroll", function () {
+  project()
+  presale()
+  ubication()
+  ubication2()
+  units()
+  unitsCarousel()
+  amenities()
+  us()
+  projectUs()
+  contact()
+});
+
