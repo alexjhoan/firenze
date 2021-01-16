@@ -92,8 +92,8 @@ function project() {
   let container = $("#project");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - (heightElem / 2.5))) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#project .aniLe").addClass("animate__fadeInLeft")
     $("#project .aniRi").addClass("animate__fadeInRight")
   }
@@ -103,8 +103,8 @@ function presale() {
   let container = $("#presale");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - heightElem)) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#presale .aniUp").addClass("animate__fadeInUp")
   }
 }
@@ -113,8 +113,8 @@ function ubication() {
   let container = $("#ubication");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - heightElem)) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#ubication .aniLe").addClass("animate__fadeInLeft")
   }
 }
@@ -123,8 +123,8 @@ function ubication2() {
   let container = $("#ubication2");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - (heightElem / 1.5))) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#ubication2 .aniRi").addClass("animate__fadeInRight")
   }
 }
@@ -133,8 +133,8 @@ function units() {
   let container = $("#units");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - (heightElem / 2.5))) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#units .aniLe").addClass("animate__fadeInLeft")
     $("#units .aniRi").addClass("animate__fadeInRight")
     $("#units .aniUp").addClass("animate__fadeInUp")
@@ -146,8 +146,8 @@ function unitsCarousel() {
   let container = $("#unitsCarousel");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - (heightElem / 1.5))) {
+  let heightWindow = $(window).height() / 1.7;
+   if (scroll > (heightTop - heightWindow)) {
     $("#unitsCarousel .aniLe").addClass("animate__fadeInLeft")
     $("#unitsCarousel .aniRi").addClass("animate__fadeInRight")
   }
@@ -157,8 +157,8 @@ function amenities() {
   let container = $("#amenities");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - (heightElem / 2.5))) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#amenities .aniLe").addClass("animate__fadeInLeft")
     $("#amenities .aniRi").addClass("animate__fadeInRight")
     $("#amenities .aniUp").addClass("animate__fadeInUp")
@@ -170,8 +170,8 @@ function us() {
   let container = $("#us");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - (heightElem / 2.5))) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#us .aniUp").addClass("animate__fadeInUp")
   }
 }
@@ -180,8 +180,8 @@ function projectUs() {
   let container = $("#projectUs");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - (heightElem / 1.5))) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#projectUs .aniIn").addClass("animate__fadeIn")
     $("#projectUs .aniUp").addClass("animate__fadeInUp")
     $("#projectUs .aniDo").addClass("animate__fadeInDown")
@@ -192,8 +192,8 @@ function contact() {
   let container = $("#contact");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if (scroll > (heightTop - (heightElem / 1.5))) {
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
     $("#contact .aniLe").addClass("animate__fadeInLeft")
     $("#contact .aniRi").addClass("animate__fadeInRight")
   }
