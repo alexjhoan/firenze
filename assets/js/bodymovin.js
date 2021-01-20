@@ -13,9 +13,11 @@ function ubicationMovin() {
   let container = $("#ubication");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if ((scroll > (heightTop - (heightElem * 2))) && (scroll < (heightTop + (heightElem)))) {
-    lottie.play("map");
+  let heightWindow = $(window).height();
+  if ((scroll > (heightTop - heightWindow)) && (scroll < (heightTop + heightWindow))) {
+    if (scroll > (heightTop - (heightWindow / 1.7))) {
+      lottie.play("map");
+    }
   } else {
     lottie.stop("map");
   }
@@ -34,9 +36,11 @@ function ubication2Movin() {
   let container = $("#ubication2");
   let heightTop = container.position().top;
   let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  if ((scroll > (heightTop - heightElem)) && (scroll < (heightTop + heightElem))) {
-    lottie.play("map2");
+  let heightWindow = $(window).height();
+  if ((scroll > (heightTop - heightWindow)) && (scroll < (heightTop + heightWindow))) {
+    if (scroll > (heightTop - (heightWindow / 2))) {
+      lottie.play("map2");
+    }
   } else {
     lottie.stop("map2");
   }

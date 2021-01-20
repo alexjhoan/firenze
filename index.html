@@ -209,7 +209,7 @@
       <div class="row">
         <div class="col-12 footer animate__animated aniUp animate__delay-1s">
           <div>
-            <img src="assets/icons/progressCircle.png" alt="">
+            <canvas id="myChart"></canvas>
             <p class="titleFoo">10%<br /><span class="h3">VENDIDO</span></p>
           </div>
           <p class="h3">¡ASEGURÁ TU UNIDAD EN PREVENTA!</p>
@@ -334,18 +334,18 @@
           </div>
           <div class="divider"></div>
           <div class="gridAmenities">
-            <img src="assets/images/nivel5.png" alt="" class="animate__animated aniLe animate__delay-1s">
-            <div class="text animate__animated aniRi animate__delay-1s">
+            <img src="assets/images/nivel5.png" alt="" class="animate__animated aniLe level5">
+            <div class="text animate__animated aniRi level5">
               <p class="h2">Nivel 5</p>
               <p>Amplia terraza solárium con dos parrilleros, equipado con áreas de living independientes donde pondrán convivir varios grupos al mismo tiempo.</p>
               <p class="strong">Vistas despejadas a Luis Alberto de Herrera.</p>
             </div>
-            <div class="text animate__animated aniLe animate__delay-2s">
+            <div class="text animate__animated aniLe level8">
               <p class="h2">Nivel 8</p>
               <p>Barbacoa equipada. Amplia terraza solárium equipada con áreas de living independientes donde pondrán convivir varios grupos al mismo tiempo. Área de Fitness al aire libre. Laundry equipado y terraza-lavadero.</p>
               <p class="strong">Vistas panorámicas a la ciudad.</p>
             </div>
-            <img src="assets/images/nivel8.png" alt="" class="animate__animated aniRi animate__delay-2s">
+            <img src="assets/images/nivel8.png" alt="" class="animate__animated aniRi level8">
           </div>
         </div>
       </div>
@@ -391,7 +391,7 @@
             <img src="assets/icons/title.png" class="d-block d-sm-none">
             Solicitá más información
           </p>
-          <p class="h3 strong">Torre Firenze, un proyecto imperdible para vivir o invertir.</p>
+          <p class="h3 mb-5 strong">Torre Firenze, un proyecto imperdible para vivir o invertir.</p>
           <form id="contactForm" class="needs-validation" action="javascript:void(0);" novalidate>
             <div class="form-floating">
               <input type="text" class="form-control" placeholder="Nombre" id="name" required>
@@ -415,10 +415,10 @@
         <div class="col-12 col-lg-5 formCol2 animate__animated aniRi">
           <p class="h3">Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</p>
           <p class="h3 strong">Coordiná una reunión virtual</p>
-          <a href="#" onclick="return false" class="whatsapp strong"><img src="assets/icons/whatsapp.png">+598 96 207 460</a>
+          <a href="#" onclick="return false" class="whatsapp strong" target="_blank"><img src="assets/icons/whatsapp.png">+598 96 207 460</a>
           <div class="shared">
-            <a href="#" onclick="return false"><img src="assets/icons/FB.png"></a>
-            <a href="https://www.instagram.com/torrefirenze/"><img src="assets/icons/ig.png"></a>
+            <a href="#" onclick="return false" target="_blank"><img src="assets/icons/FB.png"></a>
+            <a href="https://www.instagram.com/torrefirenze/" target="_blank"><img src="assets/icons/ig.png"></a>
           </div>
         </div>
       </div>
@@ -451,8 +451,9 @@
 <script type="text/javascript" src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="assets/js/lottie.min.js"></script>
 <script type="text/javascript" src="assets/js/swiper/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+<script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/bodymovin.js"></script>
+<script type="text/javascript" src="assets/js/chart.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>

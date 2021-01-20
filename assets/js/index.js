@@ -159,10 +159,33 @@ function amenities() {
   let scroll = $(window).scrollTop();
   let heightWindow = $(window).height() / 1.7;
   if (scroll > (heightTop - heightWindow)) {
-    $("#amenities .aniLe").addClass("animate__fadeInLeft")
-    $("#amenities .aniRi").addClass("animate__fadeInRight")
     $("#amenities .aniUp").addClass("animate__fadeInUp")
     $("#amenities .aniDo").addClass("animate__fadeInDown")
+  }
+}
+
+function amenities2() {
+  let container = $("#amenities .level5");
+  let heightTop = container.offset().top;
+  let scroll = $(window).scrollTop();
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
+    $("#amenities .level5.aniLe").addClass("animate__fadeInLeft")
+    $("#amenities .level5.aniRi").addClass("animate__fadeInRight")
+    console.log(heightTop)
+    console.log(scroll)
+
+  }
+}
+
+function amenities3() {
+  let container = $(".level8");
+  let heightTop = container.offset().top;
+  let scroll = $(window).scrollTop();
+  let heightWindow = $(window).height() / 1.7;
+  if (scroll > (heightTop - heightWindow)) {
+    $(".level8.aniLe").addClass("animate__fadeInLeft")
+    $(".level8.aniRi").addClass("animate__fadeInRight")
   }
 }
 
@@ -210,8 +233,38 @@ $(window).on("scroll", function () {
   units()
   unitsCarousel()
   amenities()
+  amenities2()
+  amenities3()
   us()
   projectUs()
   contact()
+});
+
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['Vendido', 'No Vendido'],
+        datasets: [{
+            label: ['10%','90%'],
+            backgroundColor: ['#569894','#cecece'],
+            borderColor: '#cecece',
+            borderWidth: 0,
+            data: [10,90],
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      cutoutPercentage: 65,
+      tooltips: false,
+        legend: {
+            display: false,
+        }
+    }
 });
 
