@@ -401,11 +401,11 @@ section#project .imgbg {
 }
 
 #ubication2 .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     display: inline-block;
     border-radius: 100%;
-    background: #DAD7D0;
+    background: #a8a8a8;
     opacity: .2;
 }
 
@@ -415,7 +415,7 @@ section#project .imgbg {
 }
 
 #ubication2 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 13px;
+    margin: 0 7px;
 }
 
 #ubication2 span.swiper-pagination-bullet:hover {
