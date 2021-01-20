@@ -1,4 +1,4 @@
-G@import "fonts.css";
+@import "fonts.css";
 
 :root {
   --primary: #ea705c;
@@ -398,6 +398,30 @@ section#project .imgbg {
   margin: 10px 0;
   width: 200%;
   float: right;
+}
+
+#ubication2 .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #DAD7D0;
+    opacity: .2;
+}
+
+#ubication2 .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #B7B1A5;
+}
+
+#ubication2 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 13px;
+}
+
+#ubication2 span.swiper-pagination-bullet:hover {
+    cursor: pointer;
+    opacity: 1;
+    background: #B7B1A5;
 }
 
 /*----------------------------units-------------------------------*/
@@ -1047,6 +1071,31 @@ header div#whatsappBtn a span {
   }
 }
 
+@media (min-width: 768px) {
+  #ubication2 .swiper-container {
+    padding-bottom: 50px;
+  }
+
+  #ubication2 .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #ubication2 .swiper-pagination {
+      width: 50%;
+      left: 50%;
+      text-align: left;
+      padding-left: 30px;
+      bottom: 0;
+      z-index: 1000;
+  }
+  #ubication2 .container .infoMap {
+    width: 50%;
+    padding-left: 30px;
+  }
+}
 
 @media (max-width: 767.98px) {
   :root {

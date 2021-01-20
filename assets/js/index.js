@@ -28,6 +28,11 @@ const galleryTop = new Swiper('.gallery-top', {
   }
 });
 
+ var ubication3 = new Swiper('.swiper-ubication2', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
 // ------------------------------Form-----------------------------
 
 function dataSubmited(data) {
