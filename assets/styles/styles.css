@@ -1,4 +1,4 @@
-@import "fonts.css";
+G@import "fonts.css";
 
 :root {
   --primary: #ea705c;
@@ -138,11 +138,11 @@ section {
 /*----------------------------Banner-------------------------------*/
 
 #banner {
-  background: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../images/gal3.jpg);
+  background: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../images/bgbanner.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: top left;
+  background-position: center 29%;
   min-height: calc(100vh - 90px);
   margin-top: 90px;
 }
@@ -599,7 +599,7 @@ section#us {
 #projectUs p:not(.h1) {
   color: #fff;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 #projectUs p.h1 {
