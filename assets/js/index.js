@@ -29,10 +29,12 @@ const galleryTop = new Swiper('.gallery-top', {
 });
 
  var ubication3 = new Swiper('.swiper-ubication2', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+  autoHeight: true,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 // ------------------------------Form-----------------------------
 
 function dataSubmited(data) {
