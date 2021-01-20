@@ -1,3 +1,13 @@
+// -------------------------------navbar------------------------------
+
+function link(linkTo) {
+ event.preventDefault()
+ let container = $(`#${linkTo}`).offset().top;
+ let heightNavBar = $(`#navbar`).height();
+ let to = container - heightNavBar
+ window.scrollTo(0, to);
+}
+
 // ------------------------------Carousel-----------------------------
 
 const galleryThumbs = new Swiper('.gallery-thumbs', {
