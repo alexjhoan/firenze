@@ -45,19 +45,16 @@ function dataSubmited(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
-
-  const form = document.querySelector('#contactForm')
-
-  fetch("https://prod.infocasas.com.uy/apps/iris/register.php", requestOptions)
-  .then((response) => response.json())
-  // .then((json) => {
-  //   if (json.status === "ok") {
-  //     $('#formSuccess').fadeIn();
-  //   } else {
-  //     $('#formError').fadeIn();
-  //   }
-  //   $('#formSignUp').hide();
-  // })
+  fetch("https://www.infocasas.com.uy/proyectos/torre-firenze?&formulario=1", requestOptions)
+  .then((json) => {
+    if (json.status === 200) {
+      $('#formSuccess').fadeIn();
+    } else {
+      $('#formError').fadeIn();
+    }
+    $('#formSending').hide();
+    console.log(json);
+  })
   .catch(error => {
     console.log('error', error);
     $('#formSignUp').hide();
@@ -68,14 +65,29 @@ function dataSubmited(data) {
 function submited() {
  'use strict'
   const form = document.querySelector('#contactForm')
+  const data = JSON.stringify({
+    nombre: form.name.value,
+    apellido: "",
+    email: form.email.value,
+    telefono: form.phone.value,
+    tel: form.phone.value,
+    source: 2,
+    utm_source: "web_firenze",
+    extra: form.consult.value,
+    InfoLeads: 1,
+    utms: Array("utm_source", "web_firenze"),
+    IDflow_execution: 4315
+  })
   if (!form.checkValidity()) {
     event.preventDefault()
     event.stopPropagation()
-    console.log('error')
-
   }else{
-    //dataSubmited(data)
-    console.log('enviado')
+    dataSubmited(data)
+    console.log(data);
+    setTimeout(()=>{
+      $(form).fadeOut();
+      $('#formSending').fadeIn();
+    },300)
   }
   form.classList.add('was-validated')
 }
@@ -189,9 +201,6 @@ function amenities2() {
   if (scroll > (heightTop - heightWindow)) {
     $("#amenities .level5.aniLe").addClass("animate__fadeInLeft")
     $("#amenities .level5.aniRi").addClass("animate__fadeInRight")
-    console.log(heightTop)
-    console.log(scroll)
-
   }
 }
 
