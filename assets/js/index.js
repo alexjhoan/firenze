@@ -57,7 +57,7 @@ function dataSubmited(data) {
   })
   .catch(error => {
     console.log('error', error);
-    $('#formSignUp').hide();
+    $('#formSending').hide();
     $('#formError').fadeIn();
   });
 }
