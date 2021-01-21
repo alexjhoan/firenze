@@ -47,18 +47,22 @@ function dataSubmited(data) {
   };
   fetch("https://www.infocasas.com.uy/proyectos/torre-firenze?&formulario=1", requestOptions)
   .then((json) => {
-    if (json.status === 200) {
-      $('#formSuccess').fadeIn();
-    } else {
-      $('#formError').fadeIn();
-    }
-    $('#formSending').hide();
-    console.log(json);
+    setTimeout(()=>{
+      if (json.status === 200) {
+        $('#formSuccess').fadeIn();
+      } else {
+        $('#formError').fadeIn();
+      }
+      $('#formSending').hide();
+      console.log(json);
+    }, 2500)
   })
   .catch(error => {
     console.log('error', error);
-    $('#formSending').hide();
-    $('#formError').fadeIn();
+    setTimeout(() => {
+      $('#formSending').hide();
+      $('#formError').fadeIn();
+    }, 2500)
   });
 }
 
@@ -95,7 +99,6 @@ function submited() {
 // ------------------------------img-edf-units----------------------------
 
 function click(id) {
-  console.log(id);
   $(".activeLevel").removeClass("activeLevel");
   $(".activeText").removeClass("activeText");
   setTimeout(() => {
@@ -276,11 +279,11 @@ var chart = new Chart(ctx, {
     data: {
         labels: ['Vendido', 'No Vendido'],
         datasets: [{
-            label: ['10%','90%'],
+            label: ['30%','70%'],
             backgroundColor: ['#569894','#cecece'],
             borderColor: '#cecece',
             borderWidth: 0,
-            data: [10,90],
+            data: [30,70],
         }]
     },
 

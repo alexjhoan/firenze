@@ -286,13 +286,13 @@ section#project .imgbg {
 #presale .progressTop img:first-of-type {
   position: absolute;
   bottom: 0;
-  left: calc(15% + 28px);
+  left: calc(30% + 28px);
 }
 
 #presale .progressTop .verticalDivider {
   position: absolute;
   bottom: -18px;
-  left: calc(15% - 1px);
+  left: calc(30% - 1px);
   border-left: solid 1px var(--text);
   height: 100%;
 }
@@ -336,7 +336,7 @@ section#project .imgbg {
 }
 
 #presale .progressBottom p:first-child {
-  margin-left: calc(15% + 1px);
+  margin-left: calc(30% + 1px);
 }
 
 /*----------------------------ubication-------------------------------*/
@@ -768,9 +768,23 @@ section#us {
 #aboutUs .footer p{
   margin-right: 30px;
 }
+
+#aboutUs #ventus div.twoImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+#aboutUs #ventus div.twoImages img:not(.logo) {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 #aboutUs #continents .footer {
   justify-content: flex-start;
 }
+
 #aboutUs #continents .footer img {
   height: 84px;
   width: auto;
