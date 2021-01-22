@@ -85,6 +85,7 @@ function submited() {
     event.preventDefault()
     event.stopPropagation()
   }else{
+    dataSubmited(data)
     setTimeout(()=>{
       $(form).fadeOut();
       $('#formSending').fadeIn();
