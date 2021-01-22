@@ -2,6 +2,7 @@
 
 function link(linkTo) {
  event.preventDefault()
+ $(`.navbar-collapse.collapse.show`).removeClass("show");
  let container = $(`#${linkTo}`).offset().top;
  let heightNavBar = $(`#navbar`).height();
  let to = container - heightNavBar
@@ -42,10 +43,10 @@ function dataSubmited(data) {
     method: 'POST',
     body: data,
     headers: {
-    'Content-type': 'application/json; charset=UTF-8',
+    'Content-type': 'multipart/form-data; charset=UTF-8',
     },
   };
-  fetch("https://www.infocasas.com.uy/proyectos/torre-firenze?&formulario=1", requestOptions)
+  fetch("https://www.infocasas.com.uy/proyectos/torre-firenze?&formulario=1&json=1", requestOptions)
   .then((json) => {
     setTimeout(()=>{
       if (json.status === 200) {
@@ -69,7 +70,7 @@ function dataSubmited(data) {
 function submited() {
  'use strict'
   const form = document.querySelector('#contactForm')
-  const data = JSON.stringify({
+  const data = json.stringify({
     nombre: form.name.value,
     apellido: "",
     email: form.email.value,
@@ -79,7 +80,6 @@ function submited() {
     utm_source: "web_firenze",
     extra: form.consult.value,
     InfoLeads: 1,
-    utms: Array("utm_source", "web_firenze"),
     IDflow_execution: 4315
   })
   if (!form.checkValidity()) {
