@@ -872,6 +872,7 @@ footer .item1 p {
 
 footer .item2 p {
   font-size: 0.8rem;
+  margin-top: 15px;
 }
 
 /*----------------------------btnWhatsapp-------------------------------*/
@@ -1164,9 +1165,6 @@ header div#whatsappBtn a span {
     width: calc(100% - 60px);
   }
   footer .item1 p {
-    font-size: 1rem;
-  }
-  footer .item2 p {
     font-size: 1rem;
   }
 }
@@ -1525,6 +1523,18 @@ header div#whatsappBtn a span {
   }
   #aboutUs .logo{
     max-width: 180px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+  #aboutUs .seeMore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #aboutUs #continents .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   footer {
@@ -1576,7 +1586,7 @@ header div#whatsappBtn a span {
   #aboutUs #continents .footer img {
     height: 50px;
     width: auto;
-    margin-right: 10px;
+    margin-right: 4px;
   }
 }
 
