@@ -286,13 +286,13 @@ section#project .imgbg {
 #presale .progressTop img:first-of-type {
   position: absolute;
   bottom: 0;
-  left: calc(30% + 28px);
+  left: calc(15% + 28px);
 }
 
 #presale .progressTop .verticalDivider {
   position: absolute;
   bottom: -18px;
-  left: calc(30% - 1px);
+  left: calc(15% - 1px);
   border-left: solid 1px var(--text);
   height: 100%;
 }
@@ -336,7 +336,7 @@ section#project .imgbg {
 }
 
 #presale .progressBottom p:first-child {
-  margin-left: calc(30% + 1px);
+  margin-left: calc(15% + 1px);
 }
 
 /*----------------------------ubication-------------------------------*/
@@ -358,7 +358,7 @@ section#project .imgbg {
 #ubication2 div#imgMap2 {
   position: relative;
   left: 0;
-  width: 60%;
+  width: 47%;
   height: auto !important;
   z-index: 1;
 }
@@ -396,7 +396,7 @@ section#project .imgbg {
 #ubication2 .infoMap .divider {
   border-bottom: solid 1px var(--text);
   margin: 10px 0;
-  width: 200%;
+  width: 100%;
   float: right;
 }
 
@@ -608,7 +608,7 @@ section#us {
 #us .text img.logo {
   width: auto;
   height: 50px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 /*----------------------------projectUs-------------------------------*/
@@ -770,10 +770,18 @@ section#us {
 }
 
 #aboutUs #ventus div.twoImages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutUs #ventus .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 30px;
 }
 
 #aboutUs #ventus div.twoImages img:not(.logo) {
@@ -783,6 +791,12 @@ section#us {
 
 #aboutUs #continents .footer {
   justify-content: flex-start;
+}
+
+#aboutUs #continents .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 30px;
 }
 
 #aboutUs #continents .footer img {
@@ -806,6 +820,10 @@ section#us {
   margin: 40px auto 70px;
 }
 
+#aboutUs #cesio .col-12 {
+    padding: 0 30px;
+}
+
 /*----------------------------footer-------------------------------*/
 
 footer {
@@ -814,26 +832,46 @@ footer {
 }
 
 footer .col-12 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
 }
 
-footer .item {
+footer .icons {
+  display: grid;
+  grid-template-rows: 40% 30%;
+  grid-row-gap: 0;
+}
+
+footer .icons .item1 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+footer .item1 .subitem1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-footer .item img {
+footer .item2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer .item1 img {
   max-width: 150px;
   width: 100%;
 }
 
-footer .item p {
+footer .item1 p {
   font-size: 1rem;
+}
+
+footer .item2 p {
+  font-size: 0.8rem;
 }
 
 /*----------------------------btnWhatsapp-------------------------------*/
@@ -934,12 +972,19 @@ header div#whatsappBtn a span {
 
 /*----------------------------Queries-------------------------------*/
 
+@media (min-width: 1300px){
+  #presale .col-12 {
+  width: 75%;
+}
+}
+
 @media (max-width: 1399.98px) {
   #unitsCarousel {
     width: 55%;
   }
   #presale .progressBottom p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
 
   #presale .progressTop img {
@@ -970,6 +1015,34 @@ header div#whatsappBtn a span {
 
   p.h3, h3 {
       font-size: 1.25rem;
+  }
+
+  #unitsCarousel {
+    width: 100%;
+  }
+
+  #project .gridProject {
+    grid-template-columns: 1fr;
+    background: transparent;
+  }
+
+  #project .gridProject > img {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #project .gridProject .infoProject {
+      padding-left: 0;
+  }
+
+  #project .infoProject .gridList {
+      padding-bottom: 30px;
+  }
+
+  #project .gridProject > img,
+  #project .infoProject .gridList p + .divider,
+  #project .imgbg {
+    display: none !important;
   }
 
   #contact img.imgbg {
@@ -1039,9 +1112,7 @@ header div#whatsappBtn a span {
   #contact .formCol2 {
     padding-top: 45px;
   }
-  #unitsCarousel {
-    width: 100%;
-  }
+
   #presale .progressTop img {
     height: 70px;
   }
@@ -1078,23 +1149,6 @@ header div#whatsappBtn a span {
     width: calc(100% + 130px) !important;
     transform: translateX(-130px) !important;
   }
-  #project .gridProject {
-    grid-template-columns: 1fr;
-    background: transparent;
-  }
-
-  #project .gridProject > img {
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  #project .gridProject .infoProject {
-      padding-left: 0;
-  }
-
-  #project .infoProject .gridList {
-      padding-bottom: 30px;
-  }
   #ubication2 .container {
     padding: 5vh 15px;
   }
@@ -1116,10 +1170,13 @@ header div#whatsappBtn a span {
     justify-content: space-evenly;
     margin-top: 30px;
   }
-  footer .item img {
+  footer .item1 img {
     width: calc(100% - 60px);
   }
-  footer .item p {
+  footer .item1 p {
+      font-size: 1rem;
+  }
+  footer .item2 p {
       font-size: 1rem;
   }
 }
@@ -1180,8 +1237,6 @@ header div#whatsappBtn a span {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-
-
   }
   #banner .titleBanner {
     padding: 0 .75rem;
@@ -1240,12 +1295,6 @@ header div#whatsappBtn a span {
     height: 1px;
     left: 0;
     bottom: 0;
-  }
-
-  #project .gridProject > img,
-  #project .infoProject .gridList p + .divider,
-  #project .imgbg {
-    display: none !important;
   }
 
   #project .infoProject .footerProject {
@@ -1316,6 +1365,7 @@ header div#whatsappBtn a span {
   #ubication2 .container .infoMap {
     margin-left: 0;
     padding: 0 .75rem;
+    padding-bottom: 10%;
   }
   #unitsCarousel .gallery-thumbs {
     display: none;
@@ -1480,31 +1530,43 @@ header div#whatsappBtn a span {
     padding: 45px 0;
   }
 
+  footer .icons {
+    display: grid;
+    grid-template-rows: 65% 30%;
+    grid-row-gap: 0;
+    }
+
+  footer .icons .item1 {
+    display: block;
+
+  }
   footer .col-12 {
-    flex-direction: column;
     justify-content: center;
   }
 
-  footer .item img {
+  footer .item1 .subitem1 img {
     width: 120px;
   }
 
-  footer .item p {
+  footer .item1 .subitem1 p {
     font-size: 0.75rem;
     margin-bottom: 5px;
   }
 
-  footer .item:not(:last-child) {
+  footer .item1 .subitem1:not(:last-child) {
     margin-bottom: 25px;
   }
 
-  footer .item:not(:first-child) p {
+  footer .item1 .subitem1:not(:first-child) p {
     margin-bottom: 10px;
   }
-  footer .item.privacyText {
-    padding-top: 30px;
+
+  footer .item2 {
+    margin-top: 10px;
+    text-align: center;
   }
-  footer .item.privacyText p {
+
+  footer .item2 p {
     font-size: 0.8rem;
   }
 
