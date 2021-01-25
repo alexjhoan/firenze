@@ -750,7 +750,8 @@ section#us {
 /*----------------------------aboutUs-------------------------------*/
 
 #aboutUs{
-  margin-top: 100px;
+  padding-top: 0;
+  margin-top: 90px;
 }
 
 #aboutUs .logo{
@@ -769,24 +770,28 @@ section#us {
   margin-right: 30px;
 }
 
-#aboutUs #ventus div.twoImages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+#aboutUs #building .twoImages{
+    background-image: url(../images/ventus-us.jpg);
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutUs #ventus{
+    margin-top: 50px;
+}
+
+#aboutUs #ventus div.twoImages img:not(.logo) {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 #aboutUs #ventus .col-12 {
     flex: 0 0 auto;
     width: 100%;
     padding: 0 30px;
-}
-
-#aboutUs #ventus div.twoImages img:not(.logo) {
-  width: 100%;
-  margin-bottom: 30px;
 }
 
 #aboutUs #continents .footer {
@@ -1526,6 +1531,7 @@ header div#whatsappBtn a span {
     display: block;
     margin: 0 auto 30px;
   }
+
   #aboutUs .seeMore {
     display: flex;
     flex-direction: row;
