@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="assets/js/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
   <link rel="stylesheet" href="assets/styles/styles.css" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42476608-1"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT9VXXWLFW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'UA-42476608-1');
+    gtag('config', 'G-ZT9VXXWLFW');
   </script>
 	<title>Firenze</title>
 </head>
@@ -63,7 +63,11 @@
       <div class="row">
         <div class="col-12">
           <a
-            href="https://api.whatsapp.com/send?phone=59897259343&text=Hola!%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Torre%20Firenze." target="_blank">
+            href="https://api.whatsapp.com/send?phone=59897259343&text=Hola!%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Torre%20Firenze." target="_blank" onclick="gtag('event', 'click', {
+                'event_category': 'Contactar por whatsapp',
+                'event_label': 'Contactar por whatsapp',
+                'value': 1
+              });">
             <button>
               <img src="assets/icons/whatsapp.png" alt="wpp" />
             </button>
@@ -116,9 +120,13 @@
                 <p>Proyecto con energías renovables</p>
               </div>
             </div>
-            <a href="assets/brochure_torre_firenze.pdf" target="_blank"><button class="btn btn-primary mt-4">
+            <a href="assets/brochure_torre_firenze.pdf" class="btn btn-primary mt-4" target="_blank" onclick="gtag('event', 'click', {
+                'event_category': 'Descargar Brocuhure',
+                'event_label': 'Descargar Brocuhure',
+                'value': 1
+              });">
               Descargar brochure
-            </button></a>
+            </a>
             <div class="footerProject">
               <div>
                 <p>CONSTRUYE/ DESARROLLA</p>
@@ -468,7 +476,11 @@
         <div class="col-12 col-lg-5 formCol2 animate__animated aniRi">
           <p class="h3">Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</p>
           <p class="h3 strong">Coordiná una reunión virtual</p>
-          <a href="https://api.whatsapp.com/send?phone=59897259343&text=Hola!%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Torre%20Firenze." class="whatsapp strong" target="_blank"><img src="assets/icons/whatsapp.png">+598 97 259 343</a>
+          <a href="https://api.whatsapp.com/send?phone=59897259343&text=Hola!%20Me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Torre%20Firenze." class="whatsapp strong" target="_blank"><img src="assets/icons/whatsapp.png" onclick="gtag('event', 'click', {
+                'event_category': 'Contactar por whatsapp',
+                'event_label': 'Contactar por whatsapp',
+                'value': 1
+              });">+598 97 259 343</a>
           <div class="shared">
             <a href="https://www.facebook.com/Torre-Firenze-100126002033498" target="_blank"><img src="assets/icons/FB.png"></a>
             <a href="https://www.instagram.com/torrefirenze/" target="_blank"><img src="assets/icons/ig.png"></a>
