@@ -138,11 +138,11 @@ section {
 /*----------------------------Banner-------------------------------*/
 
 #banner {
-  background: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../images/bgbanner.jpeg);
+  background: linear-gradient(90deg, #00000096 0%, #00000000 60%, #00000000 100%), url(../images/header.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center 29%;
+  background-position: center 14%;
   min-height: calc(100vh - 90px);
   margin-top: 90px;
 }
@@ -286,13 +286,13 @@ section#project .imgbg {
 #presale .progressTop img:first-of-type {
   position: absolute;
   bottom: 0;
-  left: calc(15% + 28px);
+  left: 0;
 }
 
 #presale .progressTop .verticalDivider {
   position: absolute;
   bottom: -18px;
-  left: calc(15% - 1px);
+  left: calc(1% - 1px);
   border-left: solid 1px var(--text);
   height: 100%;
 }
@@ -333,10 +333,6 @@ section#project .imgbg {
   font-size: 2rem;
   line-height: 2.3rem;
   margin: 0;
-}
-
-#presale .progressBottom p:first-child {
-  margin-left: calc(15% + 1px);
 }
 
 /*----------------------------ubication-------------------------------*/
@@ -788,20 +784,8 @@ section#us {
   margin-bottom: 30px;
 }
 
-#aboutUs #ventus .col-12 {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 0 30px;
-}
-
 #aboutUs #continents .footer {
   justify-content: flex-start;
-}
-
-#aboutUs #continents .col-12 {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 0 30px;
 }
 
 #aboutUs #continents .footer img {
@@ -825,9 +809,6 @@ section#us {
   margin: 40px auto 70px;
 }
 
-#aboutUs #cesio .col-12 {
-    padding: 0 30px;
-}
 
 /*----------------------------footer-------------------------------*/
 
