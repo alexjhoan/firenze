@@ -60,6 +60,7 @@ img {
 section {
   position: relative;
   padding: 15vh 0;
+  overflow: hidden;
 }
 
 .strong {
@@ -142,7 +143,7 @@ section {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center 14%;
+  background-position: center bottom;
   min-height: calc(100vh - 90px);
   margin-top: 90px;
 }
@@ -150,28 +151,15 @@ section {
 #banner .titleBanner p {
   color: #fff;
   margin: 0;
-  font-size: 1.85rem;
-  line-height: 2rem;
-}
-
-#banner .titleBanner p:first-of-type {
-  font-size: 2.75rem;
+  font-size: 1.25rem;
   line-height: 1.1;
 }
 
-#banner .titleBanner p:first-of-type span {
-  font-weight: 700;
-}
-
-#banner .titleBanner p:last-of-type {
-  font-size: 2rem;
-  line-height: 2.75rem;
-  font-weight: 700;
-}
-
-#banner .titleBanner p:last-of-type span {
-  font-size: 4.8rem;
-  line-height: 4.8rem;
+#banner .titleBanner p:first-of-type {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 300;
+  padding-top: 10vh;
 }
 
 #banner .titleBanner button {
@@ -179,13 +167,13 @@ section {
 }
 
 #banner a.btn.btn-primary {
-    margin-top: 3%;
+  margin-top: 3%;
 }
 
 #banner .titleBanner .dividerLine {
   border-bottom: solid 1px #fff;
   margin: 20px 0;
-  max-width: 400px;
+  max-width: 100px;
 }
 
 /*------------------------------Project--------------------------------*/
@@ -270,53 +258,31 @@ section#project .imgbg {
 /*-----------------------------presale-------------------------------*/
 
 #presale {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(185, 185, 185, 0) 10%, rgba(0, 0, 0, 0) 100%), #e5e3df;
+  background-color: #fff;
+  padding: 15vh 0 13vh;
 }
 
 #presale .progressTop {
   display: flex;
   flex-direction: row;
   position: relative;
+  justify-content: space-between;
 }
 
 #presale .progressTop img {
   height: 70px;
 }
 
-#presale .progressTop img:first-of-type {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-#presale .progressTop .verticalDivider {
-  position: absolute;
-  bottom: -18px;
-  left: calc(1% - 1px);
-  border-left: solid 1px var(--text);
-  height: 100%;
-}
-
 #presale .progressTop .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-#presale .progressTop .text p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0;
   line-height: 2rem;
 }
 
-#presale .progressTop .text p span {
-  font-size: 1.5rem;
-}
-
 #presale .progress {
-  height: 58px;
-  background-color: #fff;
-  border-radius: 0;
+  height: 43px;
+  background-color: #EBEBEB;
+  border-radius: 22px;
   margin: 18px 0;
 }
 
@@ -658,6 +624,52 @@ section#us {
   line-height: 1.5rem;
 }
 
+/*----------------------------Advance-------------------------------*/
+
+section#advance{
+  padding: 0;
+}
+section#advance .left .h2{
+  text-align: right;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+section#advance #lightgallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0.5%;
+}
+#advance #lightgallery a{
+  display: none;
+  overflow: hidden;
+  margin-top: 2%;
+  position: relative;
+}
+#advance #lightgallery a img {
+  transition: all .5s ease;
+  width: 100%;
+}
+#advance #lightgallery a span {
+  left: 15px;
+  top: 15px;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  background: #D25941;
+  padding: 5px 24px;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px #00000030;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+#advance #lightgallery a:hover img {
+  transform: scale(1.07);
+}
+#advance .btnMore{
+  text-align: center;
+  margin-top: 30px;
+}
+
 /*----------------------------Contact-------------------------------*/
 
 #contact img.imgbg {
@@ -732,9 +744,6 @@ section#us {
 }
 
 @keyframes sending {
-  0 {
-    opacity: 0.1
-  }
   50% {
     opacity: 0.5
   }
@@ -919,7 +928,7 @@ header div#whatsappBtn a span {
 }
 
 @keyframes brickBtn {
-  0 {
+  0% {
     transform: translate(0, 0) rotate(0deg);
   }
   90% {
@@ -1120,6 +1129,9 @@ header div#whatsappBtn a span {
 
   #presale .progressTop .text p span {
       font-size: 1rem;
+  }
+  section#advance #lightgallery {
+    grid-template-columns: repeat(4, 1fr);
   }
   #ubication {
     display: flex;
@@ -1566,6 +1578,23 @@ header div#whatsappBtn a span {
 
   footer .item2 p {
     font-size: 0.8rem;
+  }
+  section#advance {
+    padding: 8vh 0 0vh;
+  }
+  section#advance .left .h2{
+    text-align: center;
+  }
+  section#advance #lightgallery {
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  #advance #lightgallery a{
+    display: block;
+  }
+  #advance .btnMore{
+    display: none;
   }
 }
 

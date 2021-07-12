@@ -9,10 +9,13 @@
   <link rel="preload" href="assets/styles/animate.min.css" as="style"/>
   <script type="text/javascript" src="assets/js/svg-inject.min.js"></script>
 	<link rel="stylesheet" href="assets/styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/js/owl-carousel/owl-carousel.min.css">
+  <link rel="stylesheet" href="assets/js/owl-carousel/owl-theme.default.min.css">
   <link rel="stylesheet" href="assets/styles/animate.min.css">
   <link rel="stylesheet" href="assets/js/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
   <link rel="stylesheet" href="assets/styles/styles.css" />
+  <link rel="stylesheet" href="assets/js/lightgallery/css/lightgallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT9VXXWLFW"></script>
   <script>
@@ -41,7 +44,7 @@
   <!-- End Facebook Pixel Code -->
 	<title>Firenze</title>
 </head>
-<body>
+<body style="opacity: 0;">
 	<header id="navbar">
 		<div class="container">
 			<div class="row">
@@ -59,16 +62,19 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#ubication" data-linkto="ubication" onclick="link(this.dataset.linkto)">Ubicación</a>
                 </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link" href="#units" data-linkto="units" onclick="link(this.dataset.linkto)">Unidades</a>
                 </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link" href="#amenities" data-linkto="amenities" onclick="link(this.dataset.linkto)">Amenities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#presale" data-linkto="presale" onclick="link(this.dataset.linkto)">Avance de obra</a>
                 </li>
                  <li class="nav-item">
                   <a class="nav-link" href="about-us.html">Nosotros</a>
                 </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link" href="#contact" data-linkto="contact" onclick="link(this.dataset.linkto)">Contacto</a>
                 </li>
               </ul>
@@ -100,11 +106,9 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="titleBanner animate__animated animate__fadeInLeft animate__delay-1s">
-            <p><span>¡Último mes</span><br />de preventa!</p>
+            <p>¡Obra iniciada!</p>
             <div class="dividerLine"></div>
-            <p>En un punto estratégico<br />y altamente rentable.</p>
-            <div class="dividerLine"></div>
-            <p><span>12,5% OFF</span><br />en unidades limitadas</p>
+            <p>INVERTÍ EN EL PRIMER PROYECTO<br class="d-none d-sm-block" />DESARROLLADO CON BIG DATA<br class="d-none d-sm-block" />EN URUGUAY</p>
             <a href="#contact" class="btn btn-primary">Más información</a>
           </div>
 				</div>
@@ -159,28 +163,6 @@
                 <img src="assets/icons/cesio.png">
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="presale">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 animate__animated aniUp mx-auto">
-          <div class="progressTop">
-            <!-- <div class="text">
-              <p>Preventa<br /><span>40% vendido</span></p>
-            </div> -->
-            <img src="assets/icons/grua.png" alt="grua">
-            <img src="assets/icons/entrega.png" alt="entrega" class="ms-auto">
-          </div>
-          <div class="progress mx-auto">
-            <div id="progressBarFirenze" class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <div class="progressBottom">
-            <p><span id="textBuild">Inicio de obra</span><br /><span id="IdImpPercentage" class="strong">Abril 2021</span></p>
-            <p class="ms-auto text-end">Entrega<br /><span class="strong">Abril 2023</span></p>
           </div>
         </div>
       </div>
@@ -274,7 +256,7 @@
         <div class="col-12 footer animate__animated aniUp animate__delay-1s">
           <div>
             <canvas id="myChart"></canvas>
-            <p class="titleFoo">40%<br /><span class="h3">VENDIDO</span></p>
+            <p class="titleFoo">61%<br /><span class="h3">VENDIDO</span></p>
           </div>
           <p class="h3">¡ASEGURÁ TU UNIDAD EN PREVENTA!</p>
           <p class="strong">Consultá precios y disponibilidad</p>
@@ -415,6 +397,65 @@
       </div>
     </div>
   </section>
+  <section id="presale">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 animate__animated aniUp mx-auto">
+          <div class="progressTop">
+            <img src="assets/icons/grua.png" alt="grua">
+            <p class="text">Avance de obra</p>
+            <img src="assets/icons/entrega.png" alt="entrega">
+          </div>
+          <div class="progress mx-auto">
+            <div id="progressBarFirenze" class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progressBottom">
+            <p><span id="textBuild">Inicio de obra</span><br /><span id="IdImpPercentage" class="strong">Abril 2021</span></p>
+            <p class="ms-auto text-end">Entrega<br /><span class="strong">Abril 2023</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="advance">
+    <div id="lightgallery" class="wow slideInUp">
+      <a href="assets/images/gallery/jul2021-3.jpg">
+        <img src="assets/images/gallery/jul2021-3.jpg" />
+        <span>Julio 2021</span>
+      </a>
+      <a href="assets/images/gallery/jul2021-2.jpg">
+        <img src="assets/images/gallery/jul2021-2.jpg" />
+        <span>Julio 2021</span>
+      </a>
+      <a href="assets/images/gallery/jul2021-1.jpg">
+        <img src="assets/images/gallery/jul2021-1.jpg" />
+        <span>Julio 2021</span>
+      </a>
+      <a href="assets/images/gallery/jun2021-3.jpg">
+        <img src="assets/images/gallery/jun2021-3.jpg" />
+        <span>Junio 2021</span>
+      </a>
+      <a href="assets/images/gallery/jun2021-2.jpg">
+        <img src="assets/images/gallery/jun2021-2.jpg" />
+        <span>Junio 2021</span>
+      </a>
+      <a href="assets/images/gallery/jun2021-1.jpg">
+        <img src="assets/images/gallery/jun2021-1.jpg" />
+        <span>Junio 2021</span>
+      </a>
+      <a href="assets/images/gallery/mar2021.jpg">
+        <img src="assets/images/gallery/mar2021.jpg" />
+        <span>Marzo 2021</span>
+      </a>
+      <a href="assets/images/gallery/feb2021.jpg">
+        <img src="assets/images/gallery/feb2021.jpg" />
+        <span>Febrero 2021</span>
+      </a>
+    </div>
+    <div class="btnMore">
+      <button class="btn btn-primary more" onclick="seeMore()">Ver más</button>
+    </div>
+  </section>
   <section id="us">
     <div class="container">
       <div class="row">
@@ -539,7 +580,9 @@
 <script type="text/javascript" src="assets/js/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="assets/js/bodymovin.js"></script>
+<script type="text/javascript" src="assets/js/owl-carousel/owl-carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/chart.js"></script>
+<script type="text/javascript" src="assets/js/lightgallery/js/lightgallery.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>

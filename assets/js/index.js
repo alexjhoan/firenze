@@ -1,3 +1,7 @@
+$(window).on('load', function () {
+  $('body').delay(10).css('opacity', '1');
+});
+
 // -------------------------------navbar------------------------------
 
 function link(linkTo) {
@@ -277,11 +281,11 @@ var chart = new Chart(ctx, {
     data: {
         labels: ['Vendido', 'No Vendido'],
         datasets: [{
-            label: ['40%','60%'],
+            label: ['61%','39%'],
             backgroundColor: ['#569894','#cecece'],
             borderColor: '#cecece',
             borderWidth: 0,
-            data: [40,60],
+            data: [61,39],
         }]
     },
 
@@ -315,5 +319,42 @@ function autoProgress(dateInit, dateEnd, IdProgress, IdImpPercentage) {
 }
 
 $(document).ready(function(){
-  autoProgress('2021/04/01', '2023/04/01', 'progressBarFirenze', 'IdImpPercentage')
+  autoProgress('2021/06/10', '2023/04/01', 'progressBarFirenze', 'IdImpPercentage')
 })
+
+
+//---------------------------------Gallery-Advance----------------------------------
+
+if (screen.width > 768){
+  $("#lightgallery").lightGallery();
+  const items =  $('#lightgallery a').length;
+  let shown = screen.width < 992 ? 8 : 10
+  let showItems = $('#lightgallery a:visible').length+shown;
+  $('#lightgallery a:lt('+shown+')').show();
+  if(showItems >= items) {
+    $('.btnMore').fadeOut(500);
+  }
+  function seeMore() {
+    $('#lightgallery a:lt('+showItems+')').fadeIn(1000);
+    if(showItems >= items) {
+      $('.btnMore').fadeOut(500);
+    }
+  }
+}  else {
+  $("#lightgallery").addClass("owl-carousel owl-theme")
+  $("#lightgallery").lightGallery();
+  $('#advance .owl-carousel').owlCarousel({
+    loop:false,
+    margin:15,
+    nav:false,
+    dots: true,
+    responsive:{
+      0:{
+        items:1
+      },
+      575:{
+        items:2
+      },
+    }
+  })
+}
