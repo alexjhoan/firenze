@@ -588,6 +588,12 @@ section#us {
   font-size: 1.1rem;
 }
 
+#projectUs u {
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
 #projectUs p.h1 {
   color: #fff;
   text-align: center;
@@ -741,6 +747,10 @@ section#advance #lightgallery {
 
 #contact #formSending p.strong span:last-child {
   animation-delay: 300ms;
+}
+
+form#contactForm {
+    max-width: 80%;
 }
 
 @keyframes sending {
