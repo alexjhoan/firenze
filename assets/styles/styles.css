@@ -642,7 +642,7 @@ section#advance .left .h2{
 }
 section#advance #lightgallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0.5%;
 }
 #advance #lightgallery a{

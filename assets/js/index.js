@@ -319,7 +319,7 @@ function autoProgress(dateInit, dateEnd, IdProgress, IdImpPercentage) {
 }
 
 $(document).ready(function(){
-  autoProgress('2021/06/10', '2023/04/01', 'progressBarFirenze', 'IdImpPercentage')
+  autoProgress('2021/06/16', '2023/04/01', 'progressBarFirenze', 'IdImpPercentage')
 })
 
 
@@ -328,7 +328,7 @@ $(document).ready(function(){
 if (screen.width > 768){
   $("#lightgallery").lightGallery();
   const items =  $('#lightgallery a').length;
-  let shown = screen.width < 992 ? 8 : 10
+  let shown = 8
   let showItems = $('#lightgallery a:visible').length+shown;
   $('#lightgallery a:lt('+shown+')').show();
   if(showItems >= items) {
