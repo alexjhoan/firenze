@@ -319,7 +319,7 @@ function autoProgress(dateInit, dateEnd, IdProgress, IdImpPercentage) {
 }
 
 $(document).ready(function(){
-  autoProgress('2021/06/16', '2023/04/01', 'progressBarFirenze', 'IdImpPercentage')
+  autoProgress('2021/06/16', '2023/06/01', 'progressBarFirenze', 'IdImpPercentage')
 })
 
 
